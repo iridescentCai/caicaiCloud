@@ -14,9 +14,9 @@ public class ResponseObject<T> {
 
     private Integer stateCode;
 
-    private Object data;
+    private T data;
 
-    public ResponseObject getSuccessResponse(Object data) {
+    public ResponseObject getSuccessResponse(T data) {
         return new ResponseObject(successCode, data);
     }
 
