@@ -1,0 +1,22 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: caicaiPayment
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: caicai
+    url: jdbc:mysql://localhost:3036/caicaiPaymentDB?useUnicode=true&characterEncoding=utf-8&useSSL=false
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.caicai.model
+
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8762/eureka
+

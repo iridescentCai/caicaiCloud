@@ -1,0 +1,20 @@
+package com.caicai;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
+
+/**
+ * @author caicai
+ * @Date 2021/3/26 下午10:42
+ */
+@EnableEurekaServer
+@SpringBootApplication
+public class eurekaApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(eurekaApplication.class, args);
+    }
+}
+
+    
+
